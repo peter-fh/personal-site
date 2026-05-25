@@ -77,13 +77,38 @@ function Experience() {
 
       <TimelineItem step={3}>
         <TimelineHeader>
-          <TimelineDate>June 2024</TimelineDate>
-          <TimelineTitle>Official Launch</TimelineTitle>
+          <TimelineDate>Ongoing since Aug 2024</TimelineDate>
+          <TimelineTitle>Concordia Math Tutoring Center - Lead Developer</TimelineTitle>
         </TimelineHeader>
         <TimelineIndicator />
         <TimelineSeparator />
         <TimelineContent>
-          The platform is now live for all users worldwide.
+          <ul className="list-disc space-y-1 pl-3 pt-1">
+            <li>
+            Conceived and developed a specialized GenAI tutoring system that incorporates course knowledge and context to curate a personalized tutoring experience, made available to thousands of students annually
+            </li>
+            <li>
+            Independently developed a full-stack application in Python/Flask and Typescript/React, handling student data with PostgreSQL, authentication with Azure AD, and deployment with Docker 
+            </li>
+            <li>
+            Presented the platform to the Learning Specialist 2025 Conference and internally at Concordia
+            </li>
+          </ul>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem step={3}>
+        <TimelineHeader>
+          <TimelineDate>Sept 2023 - Apr 2025</TimelineDate>
+          <TimelineTitle>Concordia Math Tutoring Center - Peer Tutor</TimelineTitle>
+        </TimelineHeader>
+        <TimelineIndicator />
+        <TimelineSeparator />
+        <TimelineContent>
+          <ul className="list-disc space-y-1 pl-3 pt-1">
+            <li>
+              Provided 1-on-1 tutoring in calculus and linear algebra, helping students build foundational math skills for upper-level science and engineering courses
+            </li>
+          </ul>
         </TimelineContent>
       </TimelineItem>
     </Timeline>
