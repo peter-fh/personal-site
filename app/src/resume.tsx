@@ -20,7 +20,7 @@ export default function Resume()
 {
   return (
     <div className="flex items-center justify-center min-h-screen w-screen p-10">
-      <Tabs defaultValue="summary" className="min-h-screen w-[600px]">
+      <Tabs defaultValue="experience" className="min-h-screen w-[80vw]">
         <TabsList variant="line">
           <TabsTrigger value="summary">About Me</TabsTrigger>
           <TabsTrigger value="experience">Experience</TabsTrigger>
@@ -50,7 +50,7 @@ export default function Resume()
             </CardHeader>
 
             <CardContent>
-        <Experience/>
+              <Experience/>
             </CardContent>
         </Card>
       </TabsContent>
@@ -58,26 +58,22 @@ export default function Resume()
           <Card>
             <CardHeader>
             <CardTitle>
-                Socket Library
+                <a className="!text-foreground hover:!underline " href="https://github.com/peter-fh/socket" target="_blank"> 🔗 Socket Library</a>
             </CardTitle>
-            <CardDescription>
-                <Button asChild variant="link">
-                  <a className="!no-underline !text-muted-foreground hover:!text-foreground" href="https://github.com/peter-fh/socket" target="_blank">GitHub</a>
-                </Button>
-            </CardDescription>
             </CardHeader>
-
             <CardContent>
+              A TCP socket library using asynchronous sockets, built on top of the unix socket and polling API. The library combines these elements to create an efficient networking API. A work in progress HTTP engine is being built on top of this API, and will allow sending and receiving content over HTTP, built on nothing but Unix syscalls. 
             </CardContent>
           </Card>
           <Card className="mt-5">
             <CardHeader>
               <CardTitle>
-                Chess Engine
+                <a className="!text-foreground hover:!underline" href="https://github.com/peter-fh/Chess_Engine/tree/main" target="_blank">🔗 Chess Engine</a>
               </CardTitle>
             </CardHeader>
 
             <CardContent>
+              A bitboard-based chess engine written in C++ from scratch. The bitboard library uses many bitwise optimizations, including pre-computed directional masks, ray casting, and many more to create a search space as efficiently as possible. The engine uses minimax search using search-space optimizations, including alpha-beta pruning and quiescent search.
             </CardContent>
         </Card>
       </TabsContent>

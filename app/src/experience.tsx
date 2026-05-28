@@ -30,7 +30,7 @@ function Experience() {
         <TimelineSeparator />
 
         <TimelineContent>
-          <ul className="list-disc space-y-1 pl-3 pt-1">
+          <ul className="list-disc space-y-3 pl-3 pt-1">
             <li>
               Overhauled WinHTTP implementation by decoupling the WebSocket and HTTP implementations and replacing global mutexes with fine-grained locks, improving concurrency and reducing thread contention
             </li>
@@ -58,7 +58,7 @@ function Experience() {
         <TimelineIndicator />
         <TimelineSeparator />
         <TimelineContent>
-          <ul className="list-disc space-y-1 pl-3 pt-1">
+          <ul className="list-disc space-y-3 pl-3 pt-1">
             <li>
               Redesigned SWIG-generated C# bindings across 11 platforms, transitioning from standalone clients to a modular architecture while preserving backward compatibility with Google Test
             </li>
@@ -83,7 +83,7 @@ function Experience() {
         <TimelineIndicator />
         <TimelineSeparator />
         <TimelineContent>
-          <ul className="list-disc space-y-1 pl-3 pt-1">
+          <ul className="list-disc space-y-3 pl-3 pt-1">
             <li>
             Conceived and developed a specialized GenAI tutoring system that incorporates course knowledge and context to curate a personalized tutoring experience, made available to thousands of students annually
             </li>
@@ -104,7 +104,7 @@ function Experience() {
         <TimelineIndicator />
         <TimelineSeparator />
         <TimelineContent>
-          <ul className="list-disc space-y-1 pl-3 pt-1">
+          <ul className="list-disc space-y-3 pl-3 pt-1">
             <li>
               Provided 1-on-1 tutoring in calculus and linear algebra, helping students build foundational math skills for upper-level science and engineering courses
             </li>
