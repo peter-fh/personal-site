@@ -10,12 +10,7 @@ import {
 } from "@/components/reui/timeline"
 
 import {
-  Item,
-  ItemActions,
-  ItemContent,
-  ItemDescription,
   ItemMedia,
-  ItemTitle,
 } from "@/components/ui/item"
 
 function Experience() {
