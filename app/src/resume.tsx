@@ -14,7 +14,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
-import { Button } from "@/components/ui/button"
+import { SquareArrowOutUpRight } from 'lucide-react';
 
 export default function Resume()
 {
@@ -25,8 +25,7 @@ export default function Resume()
           <TabsTrigger value="summary">About Me</TabsTrigger>
           <TabsTrigger value="experience">Experience</TabsTrigger>
           <TabsTrigger value="projects">Projects</TabsTrigger>
-          <TabsTrigger value="skills">Skills</TabsTrigger>
-          <TabsTrigger value="interest">Interests</TabsTrigger>
+          <TabsTrigger value="links">Links</TabsTrigger>
         </TabsList>
 
       <TabsContent value="summary" className="pt-5">
@@ -58,7 +57,9 @@ export default function Resume()
           <Card>
             <CardHeader>
             <CardTitle>
-                <a className="!text-foreground hover:!underline " href="https://github.com/peter-fh/socket" target="_blank"> 🔗 Socket Library</a>
+                <a className="!text-foreground hover:!underline inline-flex items-center gap-2 whitespace-nowrap" href="https://github.com/peter-fh/socket" target="_blank">
+                  Socket Library <SquareArrowOutUpRight className="size-4" />
+                </a>
             </CardTitle>
             </CardHeader>
             <CardContent>
@@ -68,7 +69,9 @@ export default function Resume()
           <Card className="mt-5">
             <CardHeader>
               <CardTitle>
-                <a className="!text-foreground hover:!underline" href="https://github.com/peter-fh/Chess_Engine/tree/main" target="_blank">🔗 Chess Engine</a>
+                <a className="!text-foreground hover:!underline inline-flex items-center gap-2 whitespace-nowrap" href="https://github.com/peter-fh/Chess_Engine/tree/main" target="_blank">
+                  Chess Engine <SquareArrowOutUpRight className="size-4" />
+                </a>
               </CardTitle>
             </CardHeader>
 
@@ -76,6 +79,29 @@ export default function Resume()
               A bitboard-based chess engine written in C++ from scratch. The bitboard library uses many bitwise optimizations, including pre-computed directional masks, ray casting, and many more to create a search space as efficiently as possible. The engine uses minimax search using search-space optimizations, including alpha-beta pruning and quiescent search.
             </CardContent>
         </Card>
+      </TabsContent>
+      <TabsContent value="links" className="pt-5">
+          <Card>
+            <CardHeader className="flex flex-row justify-center">
+            <CardTitle>
+                <a className="!text-foreground hover:!underline inline-flex items-center gap-2 whitespace-nowrap" href="https://github.com/peter-fh" target="_blank">GitHub <SquareArrowOutUpRight className="size-4" /></a>
+            </CardTitle>
+            </CardHeader>
+          </Card>
+          <Card className="mt-5">
+            <CardHeader className="flex flex-row justify-center">
+            <CardTitle>
+                <a className="!text-foreground hover:!underline inline-flex items-center gap-2 whitespace-nowrap" href="https://www.linkedin.com/in/peter-fh/" target="_blank">LinkedIn <SquareArrowOutUpRight className="size-4" /></a>
+            </CardTitle>
+            </CardHeader>
+          </Card>
+          <Card className="mt-5">
+            <CardHeader className="flex flex-row justify-center">
+              <CardTitle>
+                <a className="!text-foreground hover:!underline inline-flex items-center gap-2 whitespace-nowrap" href="/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume <SquareArrowOutUpRight className="size-4" /></a>
+            </CardTitle>
+            </CardHeader>
+          </Card>
       </TabsContent>
       </Tabs>
     </div>
